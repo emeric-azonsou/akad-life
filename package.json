@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "lightgallery": "^2.8.3",
-    "next": "15.3.2",
+    "next": "15.3.8",
     "react": "^19.0.0",
     "react-before-after-slider-component": "^1.1.8",
     "react-bootstrap": "^2.10.10",
