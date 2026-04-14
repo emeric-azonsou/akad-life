@@ -9,8 +9,8 @@ function PricingPlan() {
     return (
         <>
             <div className={`toggle-tabs toggle-tabs1 wow fadeInUp ${Yearly ? 'yearly' : 'monthly'}`} data-wow-delay="0.4s" data-wow-duration="0.8s">
-                <span className={`monthly ${!Yearly ? 'active' : ''}`} onClick={() => setYearly(false)} >Monthly</span>
-                <span className={`yearly ${Yearly ? 'active' : ''}`} onClick={() => setYearly(true)}>Yearly</span>
+                <span className={`monthly ${!Yearly ? 'active' : ''}`} onClick={() => setYearly(false)} >Mensuel</span>
+                <span className={`yearly ${Yearly ? 'active' : ''}`} onClick={() => setYearly(true)}>Annuel</span>
             </div>
             <div className="row">
                 {pricingplandata.slice(0, pricingplandata.length - 2).map((data, i) => (
@@ -22,10 +22,10 @@ function PricingPlan() {
                                 </div>
                                 <div className="pricingtable-info">
                                     <div className={`pricingtable-price month ${Yearly ? 'd-none' : 'd-block'}`}>
-                                        <h2 className="pricingtable-bx">{data.month}<small>/ Monthly</small></h2>
+                                        <h2 className="pricingtable-bx">{data.month}<small>/ Mensuel</small></h2>
                                     </div>
                                     <div className={`pricingtable-price year ${Yearly ? 'd-block' : 'd-none'}`}>
-                                        <h2 className="pricingtable-bx">{data.year}<small>/ Yearly</small></h2>
+                                        <h2 className="pricingtable-bx">{data.year}<small>/ Annuel</small></h2>
                                     </div>
                                     <div className="pricingtable-title">
                                         <h3 className="title">{data.title}</h3>
@@ -34,7 +34,7 @@ function PricingPlan() {
                                         {data.feature}
                                     </div>
                                     <div className="pricingtable-button">
-                                        <Link href="/pricing-table" className="btn btn-secondary w-100 btn-hover1"><span>Choose Plans</span></Link>
+                                        <Link href="/pricing-table" className="btn btn-secondary w-100 btn-hover1"><span>Choisir ce Forfait</span></Link>
                                     </div>
                                 </div>
                             </div>

@@ -20,8 +20,8 @@ function Wecare2() {
                             </div>
                             <div className="icon-content">
                                 <h3 className="dz-title">{data.title}</h3>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-                                <Link href="/service-detail" className="icon-link-hover-end m-t30 d-block">Read More <i className="feather icon-arrow-right-circle" /></Link>
+                                <p>Notre équipe de spécialistes vous accompagne avec bienveillance pour votre santé féminine.</p>
+                                <Link href="/service-detail" className="icon-link-hover-end m-t30 d-block">En savoir plus <i className="feather icon-arrow-right-circle" /></Link>
                             </div>
                         </div>
                     </div>
